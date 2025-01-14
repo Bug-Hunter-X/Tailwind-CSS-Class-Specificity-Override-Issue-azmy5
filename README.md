@@ -1,0 +1,1 @@
+This repository demonstrates a common yet subtle bug in Tailwind CSS: class specificity overrides. The `bug.css` file showcases the problematic code where a more specific class unintentionally overrides a general Tailwind class.  The solution, provided in `bugSolution.css`, demonstrates how to resolve this by carefully managing class specificity and order in your stylesheets.
