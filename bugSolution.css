@@ -1,0 +1,13 @@
+The solution involves restructuring the CSS to ensure the intended Tailwind classes are applied correctly. One method is to adjust the order of your CSS rules: place the more general Tailwind class declarations before the more specific classes. Alternatively, ensure that your more specific classes are properly scoped or avoid direct overrides whenever possible.  This solution demonstrates proper ordering: 
+
+/* bugSolution.css */
+
+.bg-gray-100 { /*More general class*/
+  background-color: #f7f8fa;
+}
+
+.container .bg-gray-100 { /*More specific class should come after*/
+  background-color: #f0f0f0;
+}
+
+/*Here you can see that the intended Tailwind class is applied correctly*/
